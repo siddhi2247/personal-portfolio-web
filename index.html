@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be4d4bf613.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1> Hi, I'm <span>Siddhi </span>Kumari <br> and i'm paissinate about</h1>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/siddhi.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas error consectetur ab eligendi
+                        doloribus ea corrupti quis! Dignissimos tempore suscipit recusandae, excepturi animi mollitia,
+                        nostrum repellat totam incidunt assumenda itaque.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experiences')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span> <br>Popular, secure, portable, object-oriented, great for careers.</li>
+                             <li><span>HTML,CSS</span> <br>Build web pages, style content, essential skills.</li>
+                            <li><span>JavaScript</span> <br> Widespread, flexible, dynamic, works frontend to backend, crucial for web.</li>
+                            <li><span>C</span> <br>Foundational, efficient, portable, powerful, essential for development. </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>UI?UX</span> <br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span> <br> Web App Development</li>
+                            <li><span>App Development</span> <br>Building Android/ios apps</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span> <br>(pursuing)B.Tech from Babu Banarsi Das University Lucknow
+                                Uttar Pradesh. </li>
+                            <li><span>2022</span> <br>12th from Suryabadan Vidyapeeth Ballia Uttar Pradesh (CBSE). </li>
+                            <li><span>2020</span> <br>10th from Swami Harsewanand Public School Churk Uttar Pradesh
+                                (CBSE).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>A Front-End Developer builds websites' visual parts using HTML, CSS, and JavaScript, ensuring
+                        interactive, responsive, and user-friendly interfaces across devices and screen sizes.
+                        I Learned HTML, CSS, JavaScript, responsive design, Git, and frameworks like Bootstrap to create
+                        modern, interactive, and visually appealing user interfaces for websites.
+                    </p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Lorem, ipsum. </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, dicta repellendus ea impedit
+                        in cum nobis laborum, inventore quibusdam maxime harum similique, reprehenderit quod ipsa.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, dicta repellendus ea impedit
+                        in cum nobis laborum, inventore quibusdam maxime harum similique, reprehenderit quod ipsa.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/portfolio.png" alt="">
+                    <div class="layer">
+                        <h3> Personal Portfolio website</h3>
+                        <p>I created a personal portfolio website using HTML, CSS, and JavaScript. It includes sections
+                            for my skills, projects, services, and contact information. The site is mobile-friendly and
+                            has features like a navigation menu, tabs to switch between content, and links to my
+                            LinkedIn, GitHub, and resume.</p>
+                        <a href="https://github.com/siddhi2247/personal-portfolio-web"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work.png" alt="">
+                    <div class="layer">
+                        <h3> Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque sint modi sit
+                            reiciendis deleniti?</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work.png" alt="">
+                    <div class="layer">
+                        <h3> Online shoppin App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam cumque sint modi sit
+                            reiciendis deleniti?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">see more</a> -->
+        </div>
+    </div>
+    <!-- ------contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-phone"></i>7905224272</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>siddhikumari00310@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/siddhi-kumari-97b718261"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/siddhi2247"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/siddhiResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" row="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Sumbit </button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class=" copyright">
+            <p>Copyright &#169; Siddhi. Made with by<i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+        var typed = new Typed('#element', {
+            strings: ['Coding ', 'Web Development'],
+            typeSpeed: 90,
+        });
+    </script>
+</body>
+
+</html>
